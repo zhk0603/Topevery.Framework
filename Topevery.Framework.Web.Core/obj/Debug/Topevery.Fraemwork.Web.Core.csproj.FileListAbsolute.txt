@@ -1,0 +1,5 @@
+C:\Users\BestTime\Documents\Visual Studio 2015\Projects\Topevery.Framework\Topevery.Fraemwork.Web.Core\bin\Debug\Topevery.Fraemwork.Web.Core.dll
+C:\Users\BestTime\Documents\Visual Studio 2015\Projects\Topevery.Framework\Topevery.Fraemwork.Web.Core\bin\Debug\Topevery.Fraemwork.Web.Core.pdb
+C:\Users\BestTime\Documents\Visual Studio 2015\Projects\Topevery.Framework\Topevery.Fraemwork.Web.Core\obj\Debug\Topevery.Fraemwork.Web.Core.dll
+C:\Users\BestTime\Documents\Visual Studio 2015\Projects\Topevery.Framework\Topevery.Fraemwork.Web.Core\obj\Debug\Topevery.Fraemwork.Web.Core.pdb
+C:\Users\BestTime\Documents\Visual Studio 2015\Projects\Topevery.Framework\Topevery.Fraemwork.Web.Core\bin\Debug\Topevery.Fraemwork.Web.Core.XML

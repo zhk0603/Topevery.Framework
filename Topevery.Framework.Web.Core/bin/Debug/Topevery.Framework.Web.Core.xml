@@ -1,0 +1,658 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Topevery.Framework.Web.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Topevery.Framework.ComponentModel.DataAnnotations.ColModelAttribute">
+            <summary>
+                JQgrid表格的colModel配置信息约束。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.ColModelAttribute.Index">
+            <summary>
+                获取或设置引索，与后台交互的参数。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.ColModelAttribute.Name">
+            <summary>
+                获取或设置表格列的名称。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.ColModelAttribute.CssClass">
+            <summary>
+                获取或设置css样式类。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.ColModelAttribute.Width">
+            <summary>
+                获取或设置列宽。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.ColModelAttribute.Align">
+            <summary>
+                获取或设置对齐方式。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.ColModelAttribute.FormatterScript">
+            <summary>
+                获取或设置格式化脚本方法。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.ColModelAttribute.UnFormatterScript">
+            <summary>
+                获取或设置反格式化脚本方法。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.ColModelAttribute.Sortable">
+            <summary>
+                获取或设置是否可排序。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.ColModelAttribute.Hidden">
+            <summary>
+                获取或设置在初始化表格时是否要隐藏此列。
+            </summary>
+        </member>
+        <member name="T:Topevery.Framework.ComponentModel.DataAnnotations.PageAttribute">
+            <summary>
+                页面配置属性。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.PageAttribute.DataActin">
+            <summary>
+                获取或设置Ajax请求数据的控制器Action。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.PageAttribute.DefaultSortname">
+            <summary>
+                获取或设置默认排序字段。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.PageAttribute.DelAction">
+            <summary>
+                获取或设置删除数据的控制器Action。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.PageAttribute.EditAction">
+            <summary>
+                获取或设置保存编辑、添加数据的控制器Action。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.PageAttribute.IsDescending">
+            <summary>
+                获取或设置是否倒序排序。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.PageAttribute.MultiSelect">
+            <summary>
+                获取或设置是否可多选。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.PageAttribute.OnLoadCompleteScript">
+            <summary>
+                获取或设置加载完后执行的脚本方法。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.PageAttribute.PostDataScript">
+            <summary>
+                获取或设置提交数据的脚本方法。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.PageAttribute.ShowRowNumber">
+            <summary>
+                获取或设置是否显示行号。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ComponentModel.DataAnnotations.PageAttribute.Title">
+            <summary>
+                获取或设置页面标题名称。
+            </summary>
+        </member>
+        <member name="T:Topevery.Framework.Data.DataMapper">
+            <summary>
+                默认的数据映射器。
+            </summary>
+        </member>
+        <member name="M:Topevery.Framework.Data.DataMapper.#ctor(Topevery.Framework.Interface.IEntityMetadata)">
+            <summary>
+                初始化<see cref="T:Topevery.Framework.Data.DataMapper"/>。
+            </summary>
+            <param name="entityMetadata"></param>
+        </member>
+        <member name="P:Topevery.Framework.Data.DataMapper.EntityMetadata">
+            <summary>
+                获取实体源数据。
+            </summary>
+        </member>
+        <member name="M:Topevery.Framework.Data.DataMapper.MapTo``1(System.Data.DataTable)">
+            <summary>
+                映射数据。
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="dataTable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Framework.Data.DataMapper.MapTo``1(System.Collections.Generic.IEnumerable{System.Data.DataRow})">
+            <summary>
+                映射数据。
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="dataRows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Framework.Data.DataMapper.MapTo``1(System.Data.DataRow)">
+            <summary>
+                映射数据。
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="dataRow"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Framework.Data.DataMapper.MapTo``1(System.Data.DataSet,System.String)">
+            <summary>
+                映射数据。
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="dataSet"></param>
+            <param name="tableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Framework.Data.DataMapper.FillEntitys``1(System.Collections.Generic.IEnumerable{System.Data.DataRow})">
+            <summary>
+                填充。
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="dataRows"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Topevery.Framework.Entity.IEntity`1">
+            <summary>
+                实体接口。
+            </summary>
+            <typeparam name="TKey"></typeparam>
+        </member>
+        <member name="T:Topevery.Framework.Interface.IDataAnnotations">
+            <summary>
+                数据注释接口。
+            </summary>
+        </member>
+        <member name="M:Topevery.Framework.Interface.IDataAnnotations.SetRuntimeProperty(Topevery.Framework.Interface.IEntityPropertyMetadata)">
+            <summary>
+                初始化 <see cref="T:Topevery.Framework.Interface.IEntityPropertyMetadata" />。
+            </summary>
+            <param name="runtimeProperty"></param>
+        </member>
+        <member name="T:Topevery.Framework.Interface.IDataMapper">
+            <summary>
+                数据映射器接口。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IDataMapper.EntityMetadata">
+            <summary>
+                获取实体源数据。
+            </summary>
+        </member>
+        <member name="M:Topevery.Framework.Interface.IDataMapper.MapTo``1(System.Data.DataTable)">
+            <summary>
+                映射数据。
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="dataTable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Framework.Interface.IDataMapper.MapTo``1(System.Data.DataSet,System.String)">
+            <summary>
+                映射数据。
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="dataSet"></param>
+            <param name="tableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Framework.Interface.IDataMapper.MapTo``1(System.Data.DataRow)">
+            <summary>
+                映射数据。
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="dataRow"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Framework.Interface.IDataMapper.MapTo``1(System.Collections.Generic.IEnumerable{System.Data.DataRow})">
+            <summary>
+                映射数据。
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="dataRows"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Topevery.Framework.Interface.IEntityMetadata">
+            <summary>
+                实体元数据。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityMetadata.PropertyMetadatas">
+            <summary>
+                获取实体所有公开的属性元数据。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityMetadata.EntityPropertyInfos">
+            <summary>
+                获取实体所有的公共属性。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityMetadata.ViewPropertyMetadatas">
+            <summary>
+                获取实体在列表中的属性元数据。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityMetadata.CreatePropertyMetadatas">
+            <summary>
+                获取实体在创建时的属性元数据。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityMetadata.EditPropertyMetadatas">
+            <summary>
+                获取实体在编辑时的属性元数据。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityMetadata.DetailPropertyMetadatas">
+            <summary>
+                获取在查看实体详情时的属性元数据。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityMetadata.SearcherPropertyMetadatas">
+            <summary>
+                获取能搜索实体的属性元数据。
+            </summary>
+        </member>
+        <member name="T:Topevery.Framework.Interface.IEntityMetadataProvider">
+            <summary>
+                实体元数据提供者。
+            </summary>
+        </member>
+        <member name="M:Topevery.Framework.Interface.IEntityMetadataProvider.GetEntityMetadata(System.Type)">
+            <summary>
+                获取实体元数据。
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Framework.Interface.IEntityMetadataProvider.GetEntityMetadata``1">
+            <summary>
+                获取实体元数据。
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:Topevery.Framework.Interface.IEntityPropertyMetadata">
+            <summary>
+                运行时实体属性元数据。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.PropertyInfo">
+            <summary>
+                获取或设置实体属性。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.PropertyType">
+            <summary>
+                获取实体属性类型。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.IsKey">
+            <summary>
+                获取或设置实体属性是否为主键。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.IsHiddenOnView">
+            <summary>
+                获取或设置实体属性是否隐藏在列表。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.IsHiddenOnEdit">
+            <summary>
+                获取或设置实体属性是否隐藏在编辑时。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.IsHiddenOnCreate">
+            <summary>
+                获取或设置实体属性是否隐藏在新增时。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.IsHiddenOnDetail">
+            <summary>
+                获取或设置实体属性是否隐藏在查看详情时。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.IsSearcher">
+            <summary>
+                获取或设置实体属性是否能搜索。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.DisplayName">
+            <summary>
+                获取或设置实体属性的显示名称。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.Order">
+            <summary>
+                获取或设置实体属性的排序顺序。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.Description">
+            <summary>
+                获取或设置实体属性的描述信息。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.GroupName">
+            <summary>
+                获取或设置实体属性的组名。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.ColModelIndex">
+            <summary>
+                获取或设置引索，与后台交互的参数。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.ColModelName">
+            <summary>
+                获取或设置表格列的名称。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.CssClass">
+            <summary>
+                获取或设置实体属性的css类。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.Width">
+            <summary>
+                获取或设置实体属性的列宽。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.Align">
+            <summary>
+                获取或设置实体属性在列表时的文字对齐格式。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.Sortable">
+            <summary>
+                获取或设置实体属性是否能排序。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.FormatterScript">
+            <summary>
+                获取或设置实体属性的格式化Javascript方法名称。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.UnFormatterScript">
+            <summary>
+                获取或设置实体属性的反格式化Javascript方法名称。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IEntityPropertyMetadata.Hidden">
+            <summary>
+                获取或设置在初始化表格时是否要隐藏此列。
+            </summary>
+        </member>
+        <member name="T:Topevery.Framework.Interface.IPageConfig">
+            <summary>
+                页面配置信息。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IPageConfig.Title">
+            <summary>
+                获取或设置页面标题名称。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IPageConfig.DefaultSortname">
+            <summary>
+                获取或设置默认排序字段。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IPageConfig.IsDescending">
+            <summary>
+                获取或设置是否倒序排序。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IPageConfig.DataActin">
+            <summary>
+                获取或设置Ajax请求数据的控制器Action。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IPageConfig.EditAction">
+            <summary>
+                获取或设置保存编辑、添加数据的控制器Action。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IPageConfig.DelAction">
+            <summary>
+                获取或设置删除数据的控制器Action。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IPageConfig.MultiSelect">
+            <summary>
+                获取或设置是否可多选。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IPageConfig.ShowRowNumber">
+            <summary>
+                获取或设置是否显示行号。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IPageConfig.OnLoadCompleteScript">
+            <summary>
+                获取或设置加载完后执行的脚本方法。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IPageConfig.PostDataScript">
+            <summary>
+                获取或设置提交数据的脚本方法。
+            </summary>
+        </member>
+        <member name="T:Topevery.Framework.Interface.IPageViewModel">
+            <summary>
+                页面视图模型接口。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IPageViewModel.EntityMetadata">
+            <summary>
+                实体元数据。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IPageViewModel.EntityType">
+            <summary>
+                实体类型。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IPageViewModel.PageConfig">
+            <summary>
+                页面配置信息。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.Interface.IPageViewModel.Pagination">
+            <summary>
+                分页组件。
+            </summary>
+        </member>
+        <member name="M:Topevery.Framework.Interface.IPageViewModel.GetColNames">
+            <summary>
+                获取ColNames.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Framework.Interface.IPageViewModel.GetColModel">
+            <summary>
+                获取ColModel.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Topevery.Framework.ObjectModel.Pagination">
+            <summary>
+                分页组件。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ObjectModel.Pagination.PageSize">
+            <summary>
+                页面大小。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ObjectModel.Pagination.PageSizeList">
+            <summary>
+                显示记录数。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ObjectModel.Pagination.DefualtPageSize">
+            <summary>
+                默认页面大小。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ObjectModel.Pagination.PageCurrent">
+            <summary>
+                当前页。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ObjectModel.Pagination.Total">
+            <summary>
+                数据总数。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ObjectModel.Pagination.OrderField">
+            <summary>
+                排序字段。
+            </summary>
+        </member>
+        <member name="P:Topevery.Framework.ObjectModel.Pagination.OrderDirection">
+            <summary>
+                排序方式。asc\desc。
+            </summary>
+        </member>
+        <member name="T:Topevery.Framework.ObjectModel.TextAlign">
+            <summary>
+                文字对齐方向。
+            </summary>
+        </member>
+        <member name="T:Topevery.Framework.Utility.TypeExtensions">
+            <summary>
+                类型<see cref="T:System.Type" />辅助扩展方法类
+            </summary>
+        </member>
+        <member name="M:Topevery.Framework.Utility.TypeExtensions.IsNullableType(System.Type)">
+            <summary>
+                判断类型是否为Nullable类型
+            </summary>
+            <param name="type"> 要处理的类型 </param>
+            <returns> 是返回True，不是返回False </returns>项目。
+        </member>
+        <member name="M:Topevery.Framework.Utility.TypeExtensions.GetNonNummableType(System.Type)">
+            <summary>
+                由类型的Nullable类型返回实际类型
+            </summary>
+            <param name="type"> 要处理的类型对象 </param>
+            <returns> </returns>
+        </member>
+        <member name="M:Topevery.Framework.Utility.TypeExtensions.GetUnNullableType(System.Type)">
+            <summary>
+                通过类型转换器获取Nullable类型的基础类型
+            </summary>
+            <param name="type"> 要处理的类型对象 </param>
+            <returns> </returns>
+        </member>
+        <member name="M:Topevery.Framework.Utility.TypeExtensions.ToDescription(System.Type,System.Boolean)">
+            <summary>
+                获取类型的Description特性描述信息
+            </summary>
+            <param name="type">类型对象</param>
+            <param name="inherit">是否搜索类型的继承链以查找描述特性</param>
+            <returns>返回Description特性描述信息，如不存在则返回类型的全名</returns>
+        </member>
+        <member name="M:Topevery.Framework.Utility.TypeExtensions.ToDescription(System.Reflection.MemberInfo,System.Boolean)">
+            <summary>
+                获取成员元数据的Description特性描述信息
+            </summary>
+            <param name="member">成员元数据对象</param>
+            <param name="inherit">是否搜索成员的继承链以查找描述特性</param>
+            <returns>返回Description特性描述信息，如不存在则返回成员的名称</returns>
+        </member>
+        <member name="M:Topevery.Framework.Utility.TypeExtensions.HasAttribute``1(System.Reflection.MemberInfo,System.Boolean)">
+            <summary>
+                检查指定指定类型成员中是否存在指定的Attribute特性
+            </summary>
+            <typeparam name="T">要检查的Attribute特性类型</typeparam>
+            <param name="memberInfo">要检查的类型成员</param>
+            <param name="inherit">是否从继承中查找</param>
+            <returns>是否存在</returns>
+        </member>
+        <member name="M:Topevery.Framework.Utility.TypeExtensions.GetAttribute``1(System.Reflection.MemberInfo,System.Boolean)">
+            <summary>
+                从类型成员获取指定Attribute特性
+            </summary>
+            <typeparam name="T">Attribute特性类型</typeparam>
+            <param name="memberInfo">类型类型成员</param>
+            <param name="inherit">是否从继承中查找</param>
+            <returns>存在返回第一个，不存在返回null</returns>
+        </member>
+        <member name="M:Topevery.Framework.Utility.TypeExtensions.TryGetAttribute``1(System.Reflection.MemberInfo,``0@,System.Boolean)">
+            <summary>
+                尝试从类型成员获取指定Attribute特性
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="memberInfo"></param>
+            <param name="attribute"></param>
+            <param name="inherit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Framework.Utility.TypeExtensions.GetAttributes``1(System.Reflection.MemberInfo,System.Boolean)">
+            <summary>
+                从类型成员获取指定Attribute特性
+            </summary>
+            <typeparam name="T">Attribute特性类型</typeparam>
+            <param name="memberInfo">类型类型成员</param>
+            <param name="inherit">是否从继承中查找</param>
+            <returns>返回所有指定Attribute特性的数组</returns>
+        </member>
+        <member name="M:Topevery.Framework.Utility.TypeExtensions.IsEnumerable(System.Type)">
+            <summary>
+                判断类型是否为集合类型
+            </summary>
+            <param name="type">要处理的类型</param>
+            <returns>是返回True，不是返回False</returns>
+        </member>
+        <member name="M:Topevery.Framework.Utility.TypeExtensions.IsGenericAssignableFrom(System.Type,System.Type)">
+            <summary>
+                判断当前泛型类型是否可由指定类型的实例填充
+            </summary>
+            <param name="genericType">泛型类型</param>
+            <param name="type">指定类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Framework.Utility.TypeExtensions.IsAsync(System.Reflection.MethodInfo)">
+            <summary>
+                方法是否是异步
+            </summary>
+        </member>
+        <member name="M:Topevery.Framework.Utility.TypeExtensions.IsBaseOn(System.Type,System.Type)">
+            <summary>
+                返回当前类型是否是指定基类的派生类
+            </summary>
+            <param name="type">当前类型</param>
+            <param name="baseType">要判断的基类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Framework.Utility.TypeExtensions.IsBaseOn``1(System.Type)">
+            <summary>
+                返回当前类型是否是指定基类的派生类
+            </summary>
+            <typeparam name="TBaseType">要判断的基类型</typeparam>
+            <param name="type">当前类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Framework.Utility.TypeExtensions.GetEnumItems(System.Type)">
+            <summary>
+                获取枚举项
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

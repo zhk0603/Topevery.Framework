@@ -1,0 +1,6 @@
+C:\Users\BestTime\Documents\Visual Studio 2015\Projects\Topevery.Framework\Topevery.Framework.Web.Core\bin\Debug\Topevery.Framework.Web.Core.xml
+C:\Users\BestTime\Documents\Visual Studio 2015\Projects\Topevery.Framework\Topevery.Framework.Web.Core\bin\Debug\Topevery.Framework.Web.Core.dll
+C:\Users\BestTime\Documents\Visual Studio 2015\Projects\Topevery.Framework\Topevery.Framework.Web.Core\bin\Debug\Topevery.Framework.Web.Core.pdb
+C:\Users\BestTime\Documents\Visual Studio 2015\Projects\Topevery.Framework\Topevery.Framework.Web.Core\obj\Debug\Topevery.Framework.Web.Core.dll
+C:\Users\BestTime\Documents\Visual Studio 2015\Projects\Topevery.Framework\Topevery.Framework.Web.Core\obj\Debug\Topevery.Framework.Web.Core.pdb
+C:\Users\BestTime\Documents\Visual Studio 2015\Projects\Topevery.Framework\Topevery.Framework.Web.Core\obj\Debug\Topevery.Framework.Web.Core.csproj.CoreCompileInputs.cache

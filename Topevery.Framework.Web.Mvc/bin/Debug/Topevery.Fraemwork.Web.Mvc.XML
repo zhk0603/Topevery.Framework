@@ -1,0 +1,381 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Topevery.Fraemwork.Web.Mvc</name>
+    </assembly>
+    <members>
+        <member name="T:Topevery.Fraemwork.Web.Mvc.EntityController`2">
+            <summary>
+                实体控制器。
+            </summary>
+            <typeparam name="TEntity">实体。</typeparam>
+            <typeparam name="TKey">实体主键类型。</typeparam>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityController`2.#ctor">
+            <summary>
+                初始化一个新的<see cref="T:Topevery.Fraemwork.Web.Mvc.EntityController`2"/>。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityController`2.PageSizeList">
+            <summary>
+                获取或设置显示记录数。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityController`2.PageConfig">
+            <summary>
+                获取或设置配置信息。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityController`2.EntityMetadata">
+            <summary>
+                获取或设置实体元数据。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityController`2.EntityMetadataProvider">
+            <summary>
+                获取或设置实体元数据提供者。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityController`2.DataMapper">
+            <summary>
+                获取或设置数据映射器。
+            </summary>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityController`2.Index(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+                Index Action.
+            </summary>
+            <param name="orderField">排序字段。</param>
+            <param name="orderDirection">排序方向。</param>
+            <param name="pageSize">页面大小。</param>
+            <param name="pageCurrent">当前页。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityController`2.List(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+                List Action.
+            </summary>
+            <param name="orderField">排序字段。</param>
+            <param name="orderDirection">排序方向。</param>
+            <param name="pageSize">页面大小。</param>
+            <param name="pageCurrent">当前页。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityController`2.GetDataSet(Topevery.Fraemwork.ObjectModel.Pagination)">
+            <summary>
+                获取数据集，在派生类中实现。
+            </summary>
+            <param name="pagination"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityController`2.CreateIndexViewModel(Topevery.Fraemwork.ObjectModel.Pagination)">
+            <summary>
+                创建一个<see cref="T:Topevery.Fraemwork.Web.Mvc.PageViewModel"/>实例。
+            </summary>
+            <param name="pagination"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityController`2.CreateListViewModel(System.Int32,System.Int32,Topevery.Fraemwork.ObjectModel.Pagination)">
+            <summary>
+                创建一个<see cref="T:Topevery.Fraemwork.Web.Mvc.PageDataViewModel`2"/>实例。
+            </summary>
+            <param name="pageCurrent"></param>
+            <param name="pageSize"></param>
+            <param name="pagination"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityController`2.CreateDataItem(System.Data.DataTable)">
+            <summary>
+                创建数据模型的数据。
+            </summary>
+            <param name="dataTable">数据table</param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityController`2.CreateEntityMetadataProvider">
+            <summary>
+                创建实体元数据提供者，默认创建<see cref="T:Topevery.Fraemwork.Web.Mvc.EntityMetadataProvider"/>实例。可在派生类中重写。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityController`2.CreateDataMapper">
+            <summary>
+                创建数据映射器。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityController`2.Json(System.Object,Newtonsoft.Json.JsonSerializerSettings)">
+            <summary>
+                创建一个<see cref="T:Newtonsoft.Json.JsonReader"/>对象，将指定的对象序列化为JavaScript Object Notation（JSON）。
+            </summary>
+            <param name="data">要序列化的对象。</param>
+            <param name="serializerSettings">设置。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityController`2.Json(System.Object,System.String,System.Text.Encoding)">
+            <summary>
+                创建一个<see cref="T:Newtonsoft.Json.JsonReader"/>对象，将指定的对象序列化为JavaScript Object Notation（JSON）。
+            </summary>
+            <param name="data">要序列化的对象。</param>
+            <param name="contentType"></param>
+            <param name="contentEncoding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityController`2.Json(System.Object,System.String,System.Text.Encoding,System.Web.Mvc.JsonRequestBehavior)">
+            <summary>
+                创建一个<see cref="T:Newtonsoft.Json.JsonReader"/>对象，将指定的对象序列化为JavaScript Object Notation（JSON）。
+            </summary>
+            <param name="data">要序列化的对象。</param>
+            <param name="contentType">内容类型（MIME类型）。</param>
+            <param name="contentEncoding">内容编码。</param>
+            <param name="behavior"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityController`2.Json(System.Object,System.String,System.Text.Encoding,System.Web.Mvc.JsonRequestBehavior,Newtonsoft.Json.JsonSerializerSettings)">
+            <summary>
+                创建一个<see cref="T:Newtonsoft.Json.JsonReader"/>对象，将指定的对象序列化为JavaScript Object Notation（JSON）。
+            </summary>
+            <param name="data">要序列化的对象。</param>
+            <param name="contentType">内容类型（MIME类型）。</param>
+            <param name="contentEncoding">内容编码。</param>
+            <param name="behavior">JSON请求行为。</param>
+            <param name="serializerSettings">设置。</param>
+            <returns></returns>
+        </member>
+        <member name="T:Topevery.Fraemwork.Web.Mvc.EntityMetadata">
+            <summary>
+                实体元数据。
+            </summary>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityMetadata.#ctor(System.Type)">
+            <summary>
+            初始化一个<see cref="T:Topevery.Fraemwork.Web.Mvc.EntityMetadata"/>。
+            </summary>
+            <param name="entityType">实体类型。</param>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityMetadata.PropertyMetadatas">
+            <summary>
+                获取实体所有公开的属性元数据。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityMetadata.EntityPropertyInfos">
+            <summary>
+                获取实体所有的公共属性。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityMetadata.CreatePropertyMetadatas">
+            <summary>
+                获取实体在创建时的属性元数据。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityMetadata.DetailPropertyMetadatas">
+            <summary>
+                获取在查看实体详情时的属性元数据。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityMetadata.EditPropertyMetadatas">
+            <summary>
+                获取实体在编辑时的属性元数据。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityMetadata.SearcherPropertyMetadatas">
+            <summary>
+                获取能搜索实体的属性元数据。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityMetadata.ViewPropertyMetadatas">
+            <summary>
+                获取实体在列表中的属性元数据。
+            </summary>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityMetadata.GetPropertyMetadatas(System.Func{Topevery.Fraemwork.ComponentModel.DataAnnotations.HideAttribute,System.Boolean})">
+            <summary>
+                获取属性元数据。
+            </summary>
+            <param name="func"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Topevery.Fraemwork.Web.Mvc.EntityMetadataProvider">
+            <summary>
+                默认的实体元数据提供者。
+            </summary>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityMetadataProvider.GetEntityMetadata(System.Type)">
+            <summary>
+                获取实体元数据。
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityMetadataProvider.GetEntityMetadata``1">
+            <summary>
+                获取实体元数据。
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata">
+            <summary>
+                实体属性元数据。
+            </summary>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.#ctor(System.Reflection.PropertyInfo)">
+            <summary>
+                初始化一个<see cref="T:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata" />实例。
+            </summary>
+            <param name="propertyInfo"></param>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.Align">
+            <summary>
+                获取或设置实体属性在列表时的文字对齐格式。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.CssClass">
+            <summary>
+                获取或设置实体属性的css类。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.Description">
+            <summary>
+                获取或设置实体属性的描述信息。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.FormatterScript">
+            <summary>
+                获取或设置实体属性的格式化Javascript方法名称。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.GroupName">
+            <summary>
+                获取或设置实体属性的组名。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.IsHiddenOnCreate">
+            <summary>
+                获取或设置实体属性是否隐藏在新增时。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.IsHiddenOnDetail">
+            <summary>
+                获取或设置实体属性是否隐藏在查看详情时。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.IsHiddenOnEdit">
+            <summary>
+                获取或设置实体属性是否隐藏在编辑时。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.IsHiddenOnView">
+            <summary>
+                获取或设置实体属性是否隐藏在列表。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.IsKey">
+            <summary>
+                获取或设置实体属性是否为主键。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.IsSearcher">
+            <summary>
+                获取或设置实体属性是否能搜索。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.DisplayName">
+            <summary>
+                获取或设置实体属性的显示名称。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.Order">
+            <summary>
+                获取或设置实体属性的排序顺序。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.PropertyInfo">
+            <summary>
+                获取或设置实体属性。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.PropertyType">
+            <summary>
+                获取实体属性类型。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.Sortable">
+            <summary>
+                获取或设置实体属性是否能排序。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.UnFormatterScript">
+            <summary>
+                获取或设置实体属性的反格式化Javascript方法名称。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.Width">
+            <summary>
+                获取或设置实体属性的列宽。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.ColModelIndex">
+            <summary>
+                获取或设置引索，与后台交互的参数。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.ColModelName">
+            <summary>
+                获取或设置表格列的名称。
+            </summary>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.EntityPropertyMetadata.Initialization">
+            <summary>
+                初始化。
+            </summary>
+        </member>
+        <member name="T:Topevery.Fraemwork.Web.Mvc.Extensions.ControllerExtensions">
+            <summary>
+                控制器扩展。
+            </summary>
+        </member>
+        <member name="T:Topevery.Fraemwork.Web.Mvc.PageDataViewModel`2">
+            <summary>
+                数据模型。
+            </summary>
+            <typeparam name="TKey">实体主键类型。</typeparam>
+        </member>
+        <member name="T:Topevery.Fraemwork.Web.Mvc.PageViewModel">
+            <summary>
+                视图模型。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.PageViewModel.EntityMetadata">
+            <summary>
+                实体元数据。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.PageViewModel.EntityType">
+            <summary>
+                实体类型。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.PageViewModel.PageConfig">
+            <summary>
+                页面配置信息。
+            </summary>
+        </member>
+        <member name="P:Topevery.Fraemwork.Web.Mvc.PageViewModel.Pagination">
+            <summary>
+                分页组件。
+            </summary>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.PageViewModel.GetColNames">
+            <summary>
+                获取ColNames.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Topevery.Fraemwork.Web.Mvc.PageViewModel.GetColModel">
+            <summary>
+                获取ColModel.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

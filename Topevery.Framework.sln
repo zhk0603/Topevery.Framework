@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topevery.Framework.Web.Mvc", "Topevery.Framework.Web.Mvc\Topevery.Framework.Web.Mvc.csproj", "{EB402998-B06A-46EE-B39A-06F44F645771}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topevery.Framework.Web.Core", "Topevery.Framework.Web.Core\Topevery.Framework.Web.Core.csproj", "{31FB6A6F-9EB1-4482-B390-0F212E3C65D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB402998-B06A-46EE-B39A-06F44F645771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB402998-B06A-46EE-B39A-06F44F645771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB402998-B06A-46EE-B39A-06F44F645771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB402998-B06A-46EE-B39A-06F44F645771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31FB6A6F-9EB1-4482-B390-0F212E3C65D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31FB6A6F-9EB1-4482-B390-0F212E3C65D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31FB6A6F-9EB1-4482-B390-0F212E3C65D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31FB6A6F-9EB1-4482-B390-0F212E3C65D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B203659-9BD2-4C97-8929-3B56D66FC564}
+	EndGlobalSection
+EndGlobal
